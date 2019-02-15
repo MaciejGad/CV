@@ -87,7 +87,22 @@
         "text":"I love mobile and I always have my iPhone nearby ;) I'm an iOS Programmer with almost 8 years of experience in mobile solutions for business. Since 2011, I created over 20 unique, custom apps both as an individual Developer and as a part of bigger teams. For the last 4 years, I was primarily working remotely with clients from the UK & UAE.",
         "name":"Maciej Gad"
     },
-    "projects":[  
+    "projects":[
+        {
+            "technologies":[
+                "Swift",
+                "PromiseKit",
+                "Unit Tests",
+                "UI Tests"
+            ],
+            "note":"CV iOS app that you currently using. All sources are available under MIT license, so if you like the app, you can create a similar one - checkout code and update cv.json to place your data.",
+            "name":"Maciej Gad CV App",
+            "time":172800,
+            "role":"iOS Developer",
+            "link":"https://github.com/MaciejGad/CV"
+            
+        },
+        
         {  
             "technologies":[  
                 "Swift",

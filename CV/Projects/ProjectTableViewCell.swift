@@ -26,7 +26,7 @@ class ProjectTableViewCell: UITableViewCell, Renderable, LoadFromNib {
             if link.absoluteString.contains("itunes.apple.com") {
                 openInAppStore.setTitle("Open in AppStore", for: .normal)
             } else if link.absoluteString.contains("github.com") {
-                openInAppStore.setTitle("Checkout source from GitHub", for: .normal)
+                openInAppStore.setTitle("Checkout on GitHub", for: .normal)
             } else {
                 openInAppStore.setTitle("Open in Safari", for: .normal)
             }
