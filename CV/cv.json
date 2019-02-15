@@ -1,0 +1,219 @@
+{  
+    "workExperience":[
+        {
+            "employerName":"All in Mobile (AIM sp. z o.o)",
+            "startDate":454838400,
+            "jobTitle":"Senior iOS Developer",
+            "description": "Working on 7 different iOS projects for a highly specialized mobile dev house. Most of the time remotely."
+        },
+        {
+            "employerName":"Ceneo sp. z o.o.",
+            "endDate":454780800,
+            "startDate":425894400,
+            "jobTitle":"iOS Developer",
+            "description": "Developing a mobile app for the biggest price comparison website in CEE with a team of 5 other iOS Programmers."
+        },
+        {
+            "employerName":"Droids On Roids Sp. z o.o.",
+            "endDate":425836800,
+            "startDate":378723600,
+            "jobTitle":"iOS Developer",
+            "description": "Working with international clients of dev house and creating 6 mobile apps for iOS."
+        },
+        {
+            "employerName":"Joy Intermedia",
+            "endDate":378666000,
+            "startDate":360230400,
+            "jobTitle":"Mobile Developer",
+            "description": "Creating mobile apps for clients of 360 Degree Marketing Agency."
+        },
+        {  
+            "employerName":"Artweb Media",
+            "endDate":360151200,
+            "startDate":302349600,
+            "jobTitle":"Administrator \/ web developer",
+            "description": "Developing and optimizing one of the biggest flight booking sites and creating one of the first traveling iOS apps in Poland."
+        }
+    ],
+    "education":[  
+        {  
+            "endDate":352810800,
+            "startDate":181386000,
+            "schoolName":"Wroclaw University of Science and Technology",
+            "description":"Master of Science - MS, Bioinformatics"
+        }
+    ],
+    "skills":[  
+        {  
+            "title":"Programming languages",
+            "values":[  
+                "Swift",
+                "Objective-C",
+                "Python"
+            ]
+        },
+        {
+            "title":"Technologies",
+            "values":[
+                "Push Notifications (iOS, Firebase)", "Data base (CoreData, SQLite, MySql)", "Location/GPS (CoreLocation, Apple Maps, Google Maps)", "Version control (GIT)", "Unit & UI tests", "Continuous integration (Travis CI, Jenkins, Bitrise, Circle CI)", "oAuth2"
+            ]
+        },
+        {
+            "title":"Libraries",
+            "values":[
+                "UIKit", "CoreLocation", "Firebase", "PromiseKit", "Google Analytics", "Alamofire", "SnapKit", "Vapor", "Kingfisher", "CoreData", "R.Swift", "iOSSnapshotTestCase", "SwiftyMocky", "RxSwift", "AeroGearOAuth2"
+            ]
+        },
+        {
+            "title":"Tools",
+            "values":[
+            "Xcode", "AppCode", "CocoaPods", "Swift package manager", "Fastlane", "HockeyApp", "Crashlytics", "Fabric", "Answers", "JIRA", "Jenkins", "Photoshop"
+            ]
+        },
+        {
+            "title":"Languages",
+            "values":[
+                "English (Professional Working)","Polish (Native)"
+            ]
+        }
+    ],
+    "aboutMe":{  
+        "address":"Wrocław, Poland",
+        "website":"http:\/\/maciejgad.pl",
+        "image":"http:\/\/maciejgad.pl\/avatar.jpg",
+        "email":"gad.maciej@gmail.com",
+        "jobTitle":"Senior iOS Developer",
+        "telephone":"+48 535471 696",
+        "text":"I love mobile and I always have my iPhone nearby ;) I'm an iOS Programmer with almost 8 years of experience in mobile solutions for business. Since 2011, I created over 20 unique, custom apps both as an individual Developer and as a part of bigger teams. For the last 4 years, I was primarily working remotely with clients from the UK & UAE.",
+        "name":"Maciej Gad"
+    },
+    "projects":[  
+        {  
+            "technologies":[  
+                "Swift",
+                "Firebase",
+                "Push Notifications",
+                "oAuth2",
+                "PromiseKit",
+                "Unit Tests",
+                "UI Tests"
+            ],
+            "note":"Staff Management App for UK-based company, about 60% of unit test code coverage, extended UI integration tests",
+            "name":"Staff Management App",
+            "time":49966200,
+            "role":"iOS Developer"
+        },
+        {
+            "technologies":[
+                "Swift",
+                "Multi-biometric authentication (voice, face and eyeprint authentication)",
+                "Push Notifications",
+                "Unit Tests"
+            ],
+            "note":"Demo apps for Mobile Security Platform (e.g. authentication using fingerprint, eyeprint, pin code)",
+            "name":"Mobile Security Platform",
+            "time":10519200,
+            "role":"iOS Developer"
+        },
+        {
+            "technologies":[
+                "Objective-C",
+                "Swift",
+                "Unit Tests",
+                "MVVM",
+                "RxSwift"
+            ],
+            "note":"Nordic market leader for e-signing",
+            "name":"E-signing application",
+            "time":5259600,
+            "role":"iOS Developer"
+        },
+        {
+            "technologies":[
+                "Swift",
+                "MVVM",
+                "RxSwift"
+            ],
+            "note":"A social app that helps users pick the right outfit for any given occasion.",
+            "name":"Social media app",
+            "time":7889400,
+            "role":"iOS Developer"
+        },
+        {
+            "technologies":[
+                "Swift",
+                "Vapor (Server Side Swift)"
+            ],
+            "note":"Dance social application",
+            "name":"Dance social application",
+            "time":26298000,
+            "role":"iOS Architect, Backend developer"
+        },
+        {
+            "technologies":[
+               "Objective-C", "Core Data", "Core Location", "Google Maps", "RTL layouts"
+            ],
+            "note":"Food ordering app for Saudi Arabia client",
+            "name":"Food ordering app for Saudi Arabia",
+            "time":47336400,
+            "role":"iOS Developer"
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API", "Core Location"
+            ],
+            "note":"Continuous development of an e-commerce application for the biggest Polish price comparison company.",
+            "name":"Ceneo",
+            "time":28927800,
+            "role":"iOS Developer",
+            "link": "https://itunes.apple.com/pl/app/ceneo-zakupy-i-promocje/id395672526?l=pl&mt=8"
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API", "Internationalization"
+            ],
+            "note":"Preparation of an app for Heureka price comparison website's Czech market.",
+            "name":"Heureka",
+            "time":5259600,
+            "role":"iOS Developer",
+            "link": "https://itunes.apple.com/pl/app/heureka-v%C3%A1%C5%A1-n%C3%A1kupn%C3%AD-r%C3%A1dce/id436106975?l=pl&mt=8"
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API"
+            ],
+            "note":"Client application for live chat software.",
+            "name":"LiveChat",
+            "time":23668200,
+            "role":"iOS Developer",
+            "link": "https://itunes.apple.com/pl/app/livechat/id402466708"
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API"
+            ],
+            "note":"Sharing files application",
+            "name":"OnetDysk",
+            "time":31557600,
+            "role":"iOS Developer",
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API"
+            ],
+            "note":"Content creation app that enables users to post images, videos or text to social media feeds.",
+            "name":"Soup.io",
+            "time":10519200,
+            "role":"iOS Developer",
+        },
+        {
+            "technologies":[
+                "Objective-C", "REST API", "PHP (backend)"
+            ],
+            "note":"First Polish flight booking app for iOS.",
+            "name":"Fligo",
+            "time":18408600,
+            "role":"iOS Developer, Backend developer",
+        }
+    ]
+}

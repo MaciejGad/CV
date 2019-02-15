@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="239" id="KGk-i7-Jjw" customClass="LinksTableViewCell" customModule="CV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="238.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="TwP-1F-ulW">
+                        <rect key="frame" x="22" y="11" width="276" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i94-Ce-ZXr">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainTextColor" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="wUk-rM-Haa">
+                                <rect key="frame" x="0.0" y="36.5" width="276" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTW-bv-eiA">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8v5-id-0wE" customClass="FontAwesomeView" customModule="FontAwesome_swift">
+                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="iU0-Vd-u9P"/>
+                                                    <constraint firstAttribute="width" secondItem="8v5-id-0wE" secondAttribute="height" multiplier="1:1" id="pP1-I5-AEt"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="solid"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="iconCode" value="fa-phone"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LTW-bv-eiA" secondAttribute="height" multiplier="1:1" id="DZ1-uu-AEq"/>
+                                            <constraint firstItem="8v5-id-0wE" firstAttribute="centerY" secondItem="LTW-bv-eiA" secondAttribute="centerY" id="RPj-2n-7ed"/>
+                                            <constraint firstAttribute="width" constant="40" id="SRu-u6-n2F"/>
+                                            <constraint firstItem="8v5-id-0wE" firstAttribute="centerX" secondItem="LTW-bv-eiA" secondAttribute="centerX" id="lZQ-7r-V2w"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMF-6m-UO5">
+                                        <rect key="frame" x="51" y="0.0" width="225" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="+48 535 471 696">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sza-zh-Qgs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-4P-6Cs">
+                                <rect key="frame" x="0.0" y="87.5" width="276" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9sY-2c-IEM"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="x0z-sM-deh">
+                                <rect key="frame" x="0.0" y="99.5" width="276" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7I-AJ-DMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-TO-ABT" customClass="FontAwesomeView" customModule="FontAwesome_swift">
+                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rrf-TO-ABT" secondAttribute="height" multiplier="1:1" id="eWG-Kf-u1E"/>
+                                                    <constraint firstAttribute="width" constant="20" id="i4p-3V-mrM"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="solid"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="iconCode" value="fa-at"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="3M2-cg-9gf"/>
+                                            <constraint firstAttribute="width" secondItem="C7I-AJ-DMc" secondAttribute="height" multiplier="1:1" id="IEw-SK-67q"/>
+                                            <constraint firstItem="rrf-TO-ABT" firstAttribute="centerX" secondItem="C7I-AJ-DMc" secondAttribute="centerX" id="fPp-g3-W35"/>
+                                            <constraint firstItem="rrf-TO-ABT" firstAttribute="centerY" secondItem="C7I-AJ-DMc" secondAttribute="centerY" id="fY1-g9-1Np"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSX-UR-kaj">
+                                        <rect key="frame" x="51" y="0.0" width="225" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="gad.maciej@gmail.com">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HLN-1M-pOr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-re-ShT">
+                                <rect key="frame" x="0.0" y="150.5" width="276" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0CZ-Sr-fvU"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-mG-DCK">
+                                <rect key="frame" x="0.0" y="162.5" width="276" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxf-Tf-zch">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s4-NI-hNi" customClass="FontAwesomeView" customModule="FontAwesome_swift">
+                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3s4-NI-hNi" secondAttribute="height" multiplier="1:1" id="dD5-3e-TU7"/>
+                                                    <constraint firstAttribute="width" constant="20" id="hZP-pk-IwI"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="solid"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="iconCode" value="fa-map-marker-alt"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3s4-NI-hNi" firstAttribute="centerY" secondItem="gxf-Tf-zch" secondAttribute="centerY" id="Hbh-z4-DIf"/>
+                                            <constraint firstAttribute="width" constant="40" id="JEs-DK-q4X"/>
+                                            <constraint firstItem="3s4-NI-hNi" firstAttribute="centerX" secondItem="gxf-Tf-zch" secondAttribute="centerX" id="Kw0-2V-aHZ"/>
+                                            <constraint firstAttribute="width" secondItem="gxf-Tf-zch" secondAttribute="height" multiplier="1:1" id="oud-Uv-KBC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8J-Zh-TXf">
+                                        <rect key="frame" x="51" y="0.0" width="225" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="Wrocław, Poland">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addressAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vgd-NN-BId"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HT6-aq-zEv">
+                                <rect key="frame" x="0.0" y="213.5" width="276" height="1.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="1" id="nGw-Br-QyS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TwP-1F-ulW" secondAttribute="trailing" constant="22" id="7uB-AM-j4R"/>
+                    <constraint firstItem="TwP-1F-ulW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="PWH-57-7ad"/>
+                    <constraint firstAttribute="bottom" secondItem="TwP-1F-ulW" secondAttribute="bottom" constant="12.5" id="gyw-aN-OHd"/>
+                    <constraint firstItem="TwP-1F-ulW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="koi-fX-4og"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressButton" destination="v8J-Zh-TXf" id="gi8-mh-zRs"/>
+                <outlet property="emailButton" destination="VSX-UR-kaj" id="65H-NO-kGI"/>
+                <outlet property="phoneButton" destination="BMF-6m-UO5" id="qJj-VI-pSM"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="136.28185907046478"/>
+        </tableViewCell>
+    </objects>
+</document>

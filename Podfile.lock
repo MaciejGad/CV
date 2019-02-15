@@ -1,0 +1,44 @@
+PODS:
+  - FontAwesome.swift (1.5.0)
+  - InjectStory (0.4)
+  - iOSSnapshotTestCase (6.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.0)
+  - iOSSnapshotTestCase/Core (6.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.0):
+    - iOSSnapshotTestCase/Core
+  - NibBased (1.0)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - InjectStory
+  - iOSSnapshotTestCase
+  - NibBased
+  - PromiseKit (~> 6.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontAwesome.swift
+    - InjectStory
+    - iOSSnapshotTestCase
+    - NibBased
+    - PromiseKit
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: 55291c7a334ffacf9b62793d27c14014ec09a11b
+  InjectStory: e7c89f8c6be5ca0543d82e2e9a949f378f8e7a15
+  iOSSnapshotTestCase: f592adfdedffe6113a55528ce698ccc457a550f1
+  NibBased: 6a58fc79876b07da730b11f055baf07b4a24ff2f
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+
+PODFILE CHECKSUM: e7e6fab7d17c2ba8c75a48af6f0fbbdb289b5e7f
+
+COCOAPODS: 1.5.3

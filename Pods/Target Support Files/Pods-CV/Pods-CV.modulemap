@@ -1,0 +1,6 @@
+framework module Pods_CV {
+  umbrella header "Pods-CV-umbrella.h"
+
+  export *
+  module * { export * }
+}

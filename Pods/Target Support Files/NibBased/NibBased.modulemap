@@ -1,0 +1,6 @@
+framework module NibBased {
+  umbrella header "NibBased-umbrella.h"
+
+  export *
+  module * { export * }
+}

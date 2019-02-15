@@ -1,0 +1,6 @@
+framework module InjectStory {
+  umbrella header "InjectStory-umbrella.h"
+
+  export *
+  module * { export * }
+}
