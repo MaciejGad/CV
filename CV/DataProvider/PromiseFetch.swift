@@ -1,5 +1,6 @@
 import UIKit
 import PromiseKit
+import InjectStory
 
 protocol PromiseFetch:AnyObject {
     associatedtype PromiseModel
@@ -17,9 +18,12 @@ extension PromiseFetch {
             self.data = data
             self.tableView?.reloadData()
         }.catch { error in
-            print(error.localizedDescription)
+            PromiseFetchDependency.appRouter.inject().showErrorScreen()
         }
     }
     
 }
 
+struct PromiseFetchDependency {
+    static let appRouter = Injection<AppRouterInput>(AppDelegate.shared.appRouter)
+}

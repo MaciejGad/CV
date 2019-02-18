@@ -8,6 +8,8 @@ protocol DataProviderInput {
     func getEducation() -> Promise<[Education]>
     func getSkills() -> Promise<[Skill]>
     func getProjects() -> Promise<[Project]>
+    
+    func preloadData() -> Promise<Void>
 }
 
 class DataProvider:DataProviderInput {
@@ -50,7 +52,7 @@ class DataProvider:DataProviderInput {
         }
     }
     
-    private func getCV() -> Promise<CV> {
+    func getCV() -> Promise<CV> {
         return Promise { seal in
             loadingQueue.safeAsync {
                 do {
@@ -60,6 +62,13 @@ class DataProvider:DataProviderInput {
                     seal.reject(error)
                 }
             }
+        }
+    }
+    
+    func preloadData() -> Promise<Void> {
+        let waitAtLeast = after(seconds: 0.5)
+        return cv.then { _ in 
+            waitAtLeast
         }
     }
     

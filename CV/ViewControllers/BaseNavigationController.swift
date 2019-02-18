@@ -12,6 +12,7 @@ public class BaseNavigationController: UINavigationController {
         navigationBar.tintColor = Color.main.value
     }
     
+    
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return visibleViewController?.preferredStatusBarStyle ?? .default
     }

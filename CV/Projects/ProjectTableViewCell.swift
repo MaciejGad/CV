@@ -1,5 +1,6 @@
 import UIKit
 import NibBased
+import InjectStory
 
 class ProjectTableViewCell: UITableViewCell, Renderable, LoadFromNib {
     @IBOutlet weak var nameLabel: UILabel!
@@ -11,6 +12,8 @@ class ProjectTableViewCell: UITableViewCell, Renderable, LoadFromNib {
     @IBOutlet var linkElements: [UIView]!
     @IBOutlet weak var openInAppStore: UIButton!
     private var link:URL?
+    
+    private lazy var appRouter:AppRouterInput = Dependency.appRouter.inject()
     
     func render(model: Project) {
         nameLabel.text = model.name
@@ -44,7 +47,13 @@ class ProjectTableViewCell: UITableViewCell, Renderable, LoadFromNib {
         guard let link = link else {
             return
         }
-        UIApplication.open(url: link)
+        appRouter.open(url: link)
     }
     
+}
+
+extension ProjectTableViewCell {
+    struct Dependency {
+        static let appRouter = Injection<AppRouterInput>(AppDelegate.shared.appRouter)
+    }
 }

@@ -5,31 +5,29 @@ class TableViewController: NibBaseViewController {
     
     let dataSource:DataSource
     
+    @IBOutlet weak var tableView: UITableView!
+    
     init(dataSource:DataSource) {
         self.dataSource = dataSource
         super.init()
     }
     
-    @IBOutlet weak var tableView:UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource.prepare(tableView: tableView)
         dataSource.fetch()
+        view.backgroundColor = Color.main.value
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override var isNavigationBarHidden:Bool? {
+     override var isNavigationBarHidden:Bool? {
         return true
     }
     
     override var statusBarLightContent:Bool {
-        return false
+        return true
     }
     
+    @available(*, unavailable, message: "don't use init()")
     public required init() {
         fatalError("init() has not been implemented")
     }

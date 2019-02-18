@@ -4,6 +4,7 @@ import UIKit
 
 public enum Color:String {
     case main
+    case border
     case background
     case text
     
@@ -12,7 +13,8 @@ public enum Color:String {
     }
     
     private static var colorValues:[Color:UIColor] = [
-        .main: #colorLiteral(red: 0, green: 0.6823529412, blue: 0.937254902, alpha: 1),
+        .main: #colorLiteral(red: 0, green: 0.5333333333, blue: 0.8078431373, alpha: 1), // #colorLiteral(red: 0, green: 0.6823529412, blue: 0.937254902, alpha: 1),
+        .border: #colorLiteral(red: 0.007843137255, green: 0.3294117647, blue: 0.6509803922, alpha: 1),
         .background: .white,
         .text: .darkText
     ]

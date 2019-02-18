@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="239" id="KGk-i7-Jjw" customClass="LinksTableViewCell" customModule="CV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="398" id="KGk-i7-Jjw" customClass="LinksTableViewCell" customModule="CV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="238.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="397.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="TwP-1F-ulW">
-                        <rect key="frame" x="22" y="11" width="276" height="215"/>
+                        <rect key="frame" x="22" y="11" width="276" height="374"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i94-Ce-ZXr">
                                 <rect key="frame" x="0.0" y="0.0" width="276" height="25.5"/>
@@ -138,8 +138,116 @@
                                     <constraint firstAttribute="height" constant="1" id="0CZ-Sr-fvU"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-mG-DCK">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hYg-el-1KS">
                                 <rect key="frame" x="0.0" y="162.5" width="276" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7O-V8-RDu">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Doq-E9-jiJ" customClass="FontAwesomeView" customModule="FontAwesome_swift">
+                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Doq-E9-jiJ" secondAttribute="height" multiplier="1:1" id="WC3-kS-ga7"/>
+                                                    <constraint firstAttribute="width" constant="20" id="mnk-5A-Zz0"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="iconCode" value="fa-github"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="brands"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="2SW-zl-zAE"/>
+                                            <constraint firstItem="Doq-E9-jiJ" firstAttribute="centerX" secondItem="G7O-V8-RDu" secondAttribute="centerX" id="HHH-GI-Mp5"/>
+                                            <constraint firstItem="Doq-E9-jiJ" firstAttribute="centerY" secondItem="G7O-V8-RDu" secondAttribute="centerY" id="QJe-cY-Hxx"/>
+                                            <constraint firstAttribute="width" secondItem="G7O-V8-RDu" secondAttribute="height" multiplier="1:1" id="Ztp-Nr-tyV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zq2-b6-6zQ">
+                                        <rect key="frame" x="51" y="0.0" width="225" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="github.com/MaciejGad">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openGithub" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zET-qG-Zt7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShS-17-jXu">
+                                <rect key="frame" x="0.0" y="213.5" width="276" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="co4-Dm-Mcd"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-ue-acP">
+                                <rect key="frame" x="0.0" y="225.5" width="276" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14p-iR-9Bu">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNz-dA-DPw" customClass="FontAwesomeView" customModule="FontAwesome_swift">
+                                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kNz-dA-DPw" secondAttribute="height" multiplier="1:1" id="QHI-kK-NbF"/>
+                                                    <constraint firstAttribute="width" constant="20" id="Qif-wN-dnd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="solid"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="iconCode" value="fa-file-pdf"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="86i-Op-sq9"/>
+                                            <constraint firstItem="kNz-dA-DPw" firstAttribute="centerX" secondItem="14p-iR-9Bu" secondAttribute="centerX" id="Dlz-SS-Mhv"/>
+                                            <constraint firstItem="kNz-dA-DPw" firstAttribute="centerY" secondItem="14p-iR-9Bu" secondAttribute="centerY" id="Ty9-Og-jfl"/>
+                                            <constraint firstAttribute="width" secondItem="14p-iR-9Bu" secondAttribute="height" multiplier="1:1" id="kLy-3v-Owb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="mainBackgroundColor" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-KE-IMu">
+                                        <rect key="frame" x="51" y="0.0" width="225" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="MaciejGadCV.pdf">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openPdfPreview" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t7F-RW-B3O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brg-In-six">
+                                <rect key="frame" x="0.0" y="276.5" width="276" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="SNZ-gT-yjQ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-mG-DCK">
+                                <rect key="frame" x="0.0" y="288.5" width="276" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxf-Tf-zch">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -186,7 +294,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HT6-aq-zEv">
-                                <rect key="frame" x="0.0" y="213.5" width="276" height="1.5"/>
+                                <rect key="frame" x="0.0" y="339.5" width="276" height="34.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="1" id="nGw-Br-QyS"/>
@@ -206,9 +314,11 @@
             <connections>
                 <outlet property="addressButton" destination="v8J-Zh-TXf" id="gi8-mh-zRs"/>
                 <outlet property="emailButton" destination="VSX-UR-kaj" id="65H-NO-kGI"/>
+                <outlet property="githubButton" destination="zq2-b6-6zQ" id="rwL-rU-EjT"/>
+                <outlet property="pdfButton" destination="I5h-KE-IMu" id="OC0-yk-BlS"/>
                 <outlet property="phoneButton" destination="BMF-6m-UO5" id="qJj-VI-pSM"/>
             </connections>
-            <point key="canvasLocation" x="64" y="136.28185907046478"/>
+            <point key="canvasLocation" x="64" y="207.79610194902551"/>
         </tableViewCell>
     </objects>
 </document>

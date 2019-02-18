@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 protocol TabItemInput:Equatable, CaseIterable {
@@ -7,29 +6,19 @@ protocol TabItemInput:Equatable, CaseIterable {
     func name() -> String
 }
 
-class TabViewController<T:TabItemInput>: UITabBarController {
+class TabViewController: UITabBarController {
     let tabDelegate = Delegate()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers =  T.allCases.map{
-            let vc = $0.viewController()
-            let icon = $0.icon()?.withRenderingMode(.alwaysTemplate)
-            vc.tabBarItem.image = icon?.withRenderingMode(.alwaysOriginal)
-            vc.tabBarItem.selectedImage = icon
-            vc.tabBarItem.title = $0.name()
-            return vc
-        }
         delegate = tabDelegate
         tabBar.tintColor = Color.main.value
         tabBar.barTintColor = Color.background.value
         tabBar.unselectedItemTintColor = UIColor.lightGray
         tabBar.isTranslucent = false
         tabBar.itemPositioning = .fill
+ 
     }
-    
 }
-
 
 extension TabViewController {
     class Delegate:NSObject, UITabBarControllerDelegate {

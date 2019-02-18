@@ -9,5 +9,6 @@ struct AboutMe:Codable {
     let website:String?
     let address:String
     let image:URL?
-    let background:URL?
+    let github:URL?
+    let pdf:String?
 }
